@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  h1 {
+    font-size: 3.5rem;
+  }
+  
+  h2 {
+    font-size: 2rem;
+  }
+  
+  ul {
+    list-style: none;
+    font-size: 1.5rem;
+  }
+  
+  a {
+    text-decoration: none;
+    color:  black;
+    cursor: pointer;
+  }
+  
+  a:hover {
+    color: purple;
+  }
+  
+  .flex {
+    display: flex;
+  }
+  
+  .flex-column {
+    flex-direction: column;
+  }
+  
+  .flex-row {
+    flex-direction: row;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: flex-end;
+    /* flex-flow: row wrap; */
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    /* top: 0;
+    left: 0; */
+    background: #6CB4EE;
+  }
+   
+  nav ul {
+     gap: 20px;
+  }
+  
+  #welcome-section {
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #fef8b4;
+  }
+  
+  #hello {
+    font-family: 'Gochi Hand', cursive;
+  }
+  
+  .subheading {
+    color: blue;
+  }
+  
+  #projects {
+    align-items: center;
+    /* width: 100%; */
+    /* height: 100vh; */
+    background-color: #CCCCFF;
+    padding: 8rem 2rem;
+  }
+  
+  .project-section-header  {
+    margin: 0 auto 2rem auto;
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 2rem;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+  }
+  
+  .project-1 { grid-area: 1 / 1 / 2 / 2; }
+  .project-2 { grid-area: 1 / 2 / 2 / 3; }
+  .project-3 { grid-area: 1 / 3 / 2 / 4; }
+  .project-4 { grid-area: 2 / 1 / 3 / 2; }
+  .project-5 { grid-area: 2 / 2 / 3 / 3; }
+  .project-6 { grid-area: 2 / 3 / 3 / 4; }
+  
+  .grid-container > div {
+    background-color: rgba(233 171 88 / 0.5);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .project-image {
+    object-fit: cover;
+    width: 100%;
+  }
+
+  .project-label {
+    padding: 15px;
+    justify-content: center;
+  }
+
+  .show-all-link {
+    background-color: #6CB4EE;
+    padding: 15px;
+    border-radius: 15px;
+  }
+  
+  #contact {
+   align-items: center;
+   justify-content: center;
+   width: 100%;
+   height: 100vh;
+   background-color: fef8b4;
+   gap: 30px;
+  }
+  
+  .contact-tiles {
+    gap: 30px;
+  }
+  
+  @media screen and (max-width: 1200px) {
+    h1 {
+      font-size: 3.5rem;
+    }
+  
+    ul {
+      font-size: 1.5rem;
+    }
+  }
+  
+  @media screen and (max-width: 900px) {
+    h1 {
+      font-size: 2rem;
+    }
+  
+    ul {
+      font-size: 1.2rem;
+    }
+  }
+  
+  @media screen and (max-width: 450px) {
+    h1 {
+      font-size: 1.5rem;
+    }
+  
+    ul {
+      font-size: 1rem;
+    }
+  }
+  
+  
