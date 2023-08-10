@@ -78,6 +78,10 @@
     /* background-color: #DFFBF6; */
   }
   
+  .portrait {
+    border-radius: 50%;
+  }
+
   #hello {
     font-family: 'Gochi Hand', cursive;
   }
