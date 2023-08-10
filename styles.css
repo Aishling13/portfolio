@@ -120,7 +120,7 @@
   .grid-container > div {
     background-color: var(--secondary);
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     flex-direction: column;
   }
 
